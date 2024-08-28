@@ -86,18 +86,24 @@ FarmData2 generally uses the [GitHub flow](https://guides.github.com/introductio
 
 As a reference, the basic steps for working with GitHub Flow are as follows:
 
-- Go to the [FarmData2 Repository] (the _upstream_)
-- Fork the _upstream_ repository to your GitHub (the _origin_).
-- [Clone] the _origin_ repository to your local machine.
-- Set the _upstream_ remote for your local repository to point to the _upstream_ repository.
-- Create a _feature branch_ from the _main_ branch your local machine.
-- Make the edits to the documentation or the code in your _feature branch_.
-- Commit your edits.
-  - If the contribution reflects the work of multiple people, ensure that everyone receives attribution by [Creating a commit with multiple authors].
-- Pull the most recent _upstream_ version of the _main branch_.
-- Merge the updated _main branch_ into your _feature branch_.
-- Push your _feature branch_ to the _origin_.
-- Make a Pull Request for your _feature branch_ to the _upstream_.
+1. **Create a Feature Branch:**  
+   When starting work on a new feature or bug fix, create a new branch from `develop`. [Learn more](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
+
+2. **Commit Your Changes:**  
+   Regularly commit your changes to the feature branch. [Learn more](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits).
+
+3. **Merge into Develop:**  
+   Once your feature is complete, merge your feature branch back into `develop`. [Learn more](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-methods).
+
+4. **Create a Release Branch:**  
+   When preparing a new release, create a release branch from `develop`. [Learn more](https://docs.github.com/en/github/administering-a-repository/about-releases).
+
+5. **Merge into Main:**  
+   After the release is finalized, merge the release branch into `main` and tag it. [Learn more](https://docs.github.com/en/github/administering-a-repository/about-releases#tagging-releases).
+
+6. **Handle Hotfixes:**  
+   For urgent fixes in production, create a hotfix branch from `main`, make the necessary changes, and then merge back into both `main` and `develop`. [Learn more](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-methods).
+
 
 [Clone]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 [FarmData2 Repository]: https://github.com/DickinsonCollege/FarmData2
